@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
